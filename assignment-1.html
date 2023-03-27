@@ -1,0 +1,126 @@
+<!-- assignment (1) -->
+<!--
+<!DOCTYPE html>
+    <html>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+<style>
+      .tit { border-radius:50px ; text-align:center ;  }
+.aa{ border:5px solid black ;}
+.a {max-width:40%;}
+</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+
+    <body class=" bg-dark">
+<div class="container aa bg-primary rounded m-3 mx-auto col-12 ">
+<h1 class="tit text-bg-dark px-1 my-3 mx-auto aa aa7     "> About Me         <img class="rounded-circle" width="6%" height="8%" src="https://lh3.googleusercontent.com/a/AGNmyxbnBxmSXJZtvl06UuSfMpjDI3FBpvo-raRlzVHX=s360">
+</h1>
+
+
+    <ul class="aaa a text-info text-bg-secondary text-dark  my-3 rounded">
+        <li>  <p >my name is: <strong> abdelrhman mohamed fathy</strong> </p>   </li>
+        <li> <p> I'm 19 years old</p> </li>
+        <li> <p> I live in Egypt (Cairo)</p> </li>
+        </ul>
+
+    <p class="aaa a text-info text-bg-secondary text-dark my-3 rounded p-1"> Student at an Arab Open University in the Faculty of Computer Science
+Interested in everything related to programming, especially (Web Development, Game Design and Networking Engineering)
+</p>
+</div>
+
+
+
+
+
+<div class="container aa bg-primary rounded m-1 mx-auto col-12 row">
+<h1 class="tit text-bg-dark px-1 my-3 mx-auto aa aa7     "> Projects  </h1>
+
+
+        <div class="card col-3  m-1 row mx-auto d-block">
+        <img class="card-img-top p-2 rounded-circle b" src="data:image/jpeg;base64,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">
+        <div class="card-body ">
+        <h2> movie theater </h2>
+            <p class="card-text"> Come enjoy some movies  </p>
+            <form action="" class="d-flex">
+               <a href="https://abdelrhman0m0f.w3spaces.com/ass-4/a5-1.html
+
+
+" >  <button  class="btn btn-dark" type="button" > go to site </button>  </a>
+            </form></div></div>
+
+
+     <div class="card col-3 m-1 row mx-auto d-block">
+        <img class="card-img-top p-2 rounded-circle b" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlIv2hUjNzYiSfwe8SK4TeyFQXRXqTLIrhxg&usqp=CAU">
+        <div class="card-body ">
+        <h2> restaurant </h2>
+            <p class="card-text"> Come to fill your stomacht  </p>
+            <form action="" class="d-flex">
+               <a href="https://abdelrhman0m0f.w3spaces.com/ass-4/a4-1.html
+
+
+" >  <button  class="btn btn-dark " type="button" > go to site </button>  </a>
+            </form></div></div>
+
+
+     <div class="card col-3 m-1 row mx-auto d-block">
+        <img class="card-img-top p-2 rounded-circle b" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7VF05L_QIdnVROzQoRqZuB9kYQOYEjidzyw&usqp=CAU">
+        <div class="card-body ">
+        <h2> airport </h2>
+            <p class="card-text"> Come enjoy some trips  </p>
+            <form action="" class="d-flex">
+               <a href="https://abdelrhman0m0f.w3spaces.com/quiz/home.html" >  <button  class="btn btn-dark" type="button" > go to site </button>  </a>
+            </form></div></div>
+
+
+
+
+</div>
+
+
+
+
+    <div class="container aa bg-primary rounded m-3 mx-auto col-12 ">
+
+<h1 class="tit text-bg-dark px-1 my-3 mx-auto aa    "> Content </h1>
+
+    <form action="" class="d-flex">
+            <ul class="aaa  text-info text-bg-secondary text-dark  my-3 rounded px-4">
+
+<li>
+    <label> Name:  </label>
+        <input type="text" class="form-control me-2" value="abdelrhman mohamed "> <br>
+</li>
+
+<li>
+    <label> date of birth </label>
+        <input type="text" class="form-control me-2" value="16/4/2004"> <br>
+</li>
+
+<li>
+    <label> Nationality </label>
+        <input type="text" class="form-control me-2" value="Egyptian" > <br>
+</li>
+
+<li>
+    <label> email </label>
+        <input type="email" class="form-control me-2" value="2abdelrhman00mohamed4@gmail.com
+"> <br>
+</li>
+
+<li>
+    <label> number </label>
+        <input type="number" class="form-control me-2" value="01129015244"> <br>
+</li>
+
+    </form>
+
+    </div>
+
+
+    </body>
+
+    </html>
+-->
